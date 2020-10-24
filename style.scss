@@ -1,0 +1,43 @@
+*,
+:before,
+:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.slider {
+
+  &-container {
+    overflow: hidden;
+    background-color: #f59898;
+  }
+
+  &-track {
+    display: flex;
+    background-color: #ffd45c;
+    transition: all .2s;
+  }
+
+  &-item {
+    height: 100px;
+    min-width: 200px;
+
+    &:nth-child(3n+1) {background-color: #ea9060;}
+
+    &:nth-child(3n+2) {background-color: #2952cd;}
+
+    &:nth-child(3n+3) {background-color: #ff797d;}
+  }
+
+
+
+  &-buttons {
+    text-align: center;
+  }
+}
